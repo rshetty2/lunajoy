@@ -50,15 +50,7 @@ async function broadcast() {
                         broadcastAll(JSON.stringify(rows));
                     }
     }));
-    // return new Promise((resolve) => {
-    //     setTimeout(() => {
-    //         resolve(getAll(((err,rows) => {
-    //             if(!err) {
-    //                 this.broadcastAll(JSON.stringify(rows));
-    //             }
-    //         })));
-    //     }, 2000);
-    // });
+
 }
 
 

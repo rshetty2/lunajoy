@@ -25,26 +25,7 @@ const clients = {};
     Object.assign(clients, {id:socket});
 
   });
-   
-  // io.on('message', message => {
-  //   console.log('Client registration request arrived');
-  //   const parsedMessage = JSON.parse(message);
-    
-  //   if (parsedMessage.type === 'register') {
-  //     // Register the client
-  //     const { clientId } = parsedMessage;
-  //     clients[clientId] = ws;
-  //     console.log(`Client ${clientId} registered`);
-  //   } else if (parsedMessage.type === 'update') {
-  //     // Broadcast update to all registered clients
-  //     Object.values(clients).forEach(client => {
-  //       //if (client.readyState === WebSocket.OPEN) {
-  //       if (client.readyState === io.OPEN) {
-  //         client.send(JSON.stringify({ type: 'update', data: parsedMessage.data }));
-  //       }
-  //     });
-  //   }
-  // });
+
 
   io.on('close', () => {
     console.log('Client disconnected');

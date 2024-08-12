@@ -1,3 +1,19 @@
+# Lunajoy health application
+
+## Project structure
+- Folder lunajoy\server contains files needed to run nodejs and sqlite.
+- Folder lunajoy\client contains files needed to run the reactjs frontend.
+
+## How to run
+- After cloning the repository from Github, peform following :
+1. Open one terminal and navigate to /lunajoy/server.
+2. run command 'npm start'. This will start 
+
+The Project provides capability to post health data for a client.
+is built using Node.js, SQLite, React.js
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
