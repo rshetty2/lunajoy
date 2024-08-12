@@ -21,10 +21,11 @@ few entries through the form and reload the page.
 
 
 ## TODO
-- Wesocket connection is established. However, the broadcasted json with updated health records need to be rendered on bar chart. 
-Authenticaion using google authenticator need to be implemented.
-Beautify UI.
-Validation of form entries. 
+- Currently, the chart display is not specific to a patient. Appropriate filtering need to be provided to limit to specific patient.
+- Websocket connection is established. However, the broadcasted json with updated health records need to be rendered on bar chart. 
+- Authenticaion using google authenticator need to be implemented.
+- Beautify UI (Including Bar chart).
+- Validation of form entries need to be implemented.
 For all above, would need more time.
 
 
