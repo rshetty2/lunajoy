@@ -20,7 +20,6 @@ const clients = {};
 
 
   io.on('connection', (socket) => { 
-    console.log(socket.handshake.query.client); 
     let id = socket.handshake.query.client;
     Object.assign(clients, {id:socket});
 
