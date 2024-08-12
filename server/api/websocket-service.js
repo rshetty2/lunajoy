@@ -39,7 +39,6 @@ const clients = {};
 
 
   function broadcastAll(message) {
-    console.log('reached broadcastAll method inside websocket-service %o', clients[1])
     Object.values(clients).forEach(clientObj => {
         clientObj.send(JSON.stringify({ type: 'update', data: message.data }));
     });

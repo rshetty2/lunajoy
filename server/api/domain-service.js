@@ -43,10 +43,8 @@ app.post('/api/health',(req,res) => {
 });
 
 async function broadcast() {
-    console.log('in broadcast method inside domain-service');
     getAll(((err,rows) => {
                     if(!err) {
-                        console.log('in broadcast method before broadcase');
                         broadcastAll(JSON.stringify(rows));
                     }
     }));
@@ -59,7 +57,6 @@ app.get('/api/health/all',(req,res) => {
      if(err) {
         res.status(500).json({error: 'failed to retrieve data'});
      }  else {
-        console.log(rows);
         res.status(200).json(rows);
      }  
     }); 

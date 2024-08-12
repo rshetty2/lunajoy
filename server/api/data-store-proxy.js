@@ -35,7 +35,6 @@ function saveHealth(userdata) {
                 console.error('Error querying database:', err.message);
                 callback(err,null);
             } else {
-                console.log('REACHED getAll %d, count = %d', rows[0]["patient_id"], rows.length);
                 callback(null,rows);
             }
         });
